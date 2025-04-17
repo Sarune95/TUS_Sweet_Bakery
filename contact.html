@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="font/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="font/font-awesome/css/brands.css">
+    <link rel="stylesheet" href="font/font-awesome/css/solid.css">
+	<title>Sweet Bakery</title>   
+</head>
+
+<body>
+
+    <!-- NAVIGATION-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+        <a href="links.html">Info</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- CONTENT -->
+    <div id="container">
+
+        <div class="headerImg">
+            <img class="image" src="/images/cover.jpg" alt="Header image">
+        </div>
+        
+        <div class="PageHeading">
+            <h1>Contact Us!</h1>
+        </div>
+        <div class="contact_back">
+            
+            <div class="contact_form">
+                    <form id="detailsForm" action="http://rdwd.atspace.cc/response.php" method="POST">
+                        
+                        <p class="contact_inputs">
+                            <label for="firstname">First Name:</label>
+                            <input  type="text" name="firstname" id="firstname">
+                        </p>
+                        <p class="contact_inputs">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" name="lastname" id="lastname">
+                        </p>
+                        <p class="contact_inputs">
+                            <label for="telephone">Telephone:</label>
+                            <input type="text" name="telephone" id="telephone">
+                        </p>
+                        <p class="contact_inputs">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                        </p>
+                        <p class="contact_inputs">
+                            <label for="email">Reenter Email:</label>
+                            <input type="email" name="email" id="email">
+                        </p>
+                        <p class="contact_inputs">
+                            <label for="address">Address:</label>
+                            <textarea name="address" id="address" cols="45" rows="5"></textarea>
+                        </p>
+                        <p class="contact_inputs">
+                            <label for="noOfGuests">Rate our baked goods from 1 To 10:</label>
+                            <input type="text" name="noOfGuests" id="noOfGuests">
+                        </p>
+                        <br>
+                        <label for="noOfGuests">member or not member:</label>
+                        <p class="contact_inputs">
+                        
+                            <input type="radio" name="country" id="IndiaYes" value="India">
+                            <label for="IndiaYes">Yes</label>
+
+                            <input type="radio" name="country" id="IndiaNo" value="India">
+                            <label for="IndiaNo">No</label>
+                        </p>    
+                    
+                        <p>
+                            <input type="submit" name="submit" id="submit" value="Submit">
+                        </p>
+                    </form>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+        
+    <!-- FOOTER -->
+    <footer> 
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+            <i class="fa-brands fa-square-facebook fa-beat"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+            <i class="fa-brands fa-square-instagram fa-beat"></i></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)">
+            <i class="fa-brands fa-square-x-twitter fa-beat"></i></a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Visit our Youtube page (opens in a new tab)">
+            <i class="fa-brands fa-square-youtube fa-beat"></i></a>
+        <br>
+        <span><strong>@ Sweet Bakery 2025 | Design By: Sarune</strong></span>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>document.querySelector("#detailsForm").addEventListener("submit",processForm)</script>
+    
+</body>
+</html>
