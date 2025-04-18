@@ -41,46 +41,37 @@
             <div class="contact_form">
                     <form id="detailsForm" action="http://rdwd.atspace.cc/response.php" method="POST">
                         
-                            <label for="firstname">First Name:</label>
-                            <input  type="text" name="firstname" id="firstname">
-                        <p class="contact_inputs">
-                            <label for="lastname">Last Name:</label>
-                            <input type="text" name="lastname" id="lastname">
-                        </p>
-                        <p class="contact_inputs">
-                            <label for="telephone">Telephone:</label>
-                            <input type="text" name="telephone" id="telephone">
-                        </p>
-                        <p class="contact_inputs">
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" id="email">
-                        </p>
-                        <p class="contact_inputs">
-                            <label for="email">Reenter Email:</label>
-                            <input type="email" name="email" id="email">
-                        </p>
-                        <p class="contact_inputs">
-                            <label for="address">Address:</label>
-                            <textarea name="address" id="address" cols="45" rows="5"></textarea>
-                        </p>
-                        <p class="contact_inputs">
-                            <label for="noOfGuests">Rate our baked goods from 1 To 10:</label>
-                            <input type="text" name="noOfGuests" id="noOfGuests">
-                        </p>
-                        <br>
-                        <label for="noOfGuests">member or not member:</label>
-                        <p class="contact_inputs">
+                        <label for="firstname">First Name:</label>
+                        <input  type="text" name="firstname" id="firstname">
                         
-                            <input type="radio" name="country" id="IndiaYes" value="India">
-                            <label for="IndiaYes">Yes</label>
 
-                            <input type="radio" name="country" id="IndiaNo" value="India">
-                            <label for="IndiaNo">No</label>
-                        </p>    
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname">
+
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" id="address">
+
+                        <label for="telephone">Telephone:</label>
+                        <input type="text" name="telephone" id="telephone" placeholder="e.g. 0873359669">
+                   
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
                     
-                        <p>
-                            <input type="submit" name="submit" id="submit" value="Submit">
-                        </p>
+                        <label for="email">Retype your Email: </label>
+                        <input type="email" name="confirmEmail" id="confirmEmail" required>
+                    
+                        <div class="radioButtons">
+                            <label>Membership</label>
+                            <input type="radio" id="member" name="membership" value="member">
+                            <label for="member">Member</label>
+                            <input type="radio" id="not-member" name="membership" value="nonMember">
+                            <label for="nonMember">Not-member</label>
+                        </div>
+                        <label for="comment">Comment: </label>
+                        <textarea id="comment" name="comment" rows="5" cols="25" required></textarea>
+                     
+                        <button type="submit">Submit</button>
+                    
                     </form>
             </div>
         </div>
