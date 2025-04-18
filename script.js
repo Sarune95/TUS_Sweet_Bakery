@@ -18,7 +18,7 @@ function myFunction()
 
 
 
-
+/*
 
 //Gallery Page js
         
@@ -71,7 +71,7 @@ document.querySelector("#next").addEventListener("click",next);
 document.querySelector("#prev").addEventListener("click",previous);
 
 
-
+*/
 
 
 
@@ -94,8 +94,6 @@ let time = 2000;  // Time interval between image changes (in milliseconds)
   bakes[5] = "images/recipyImg/pic6.jpg";
   bakes[6] = "images/recipyImg/pic7.jpg";
   bakes[7] = "images/recipyImg/pic8.jpg";
-  bakes[8] = "images/recipyImg/pic9.jpg";
-  bakes[9] = "images/recipyImg/pic10.jpg";
 
 
 // Function to change the image
