@@ -115,58 +115,82 @@ function changeImg() {
 
 
 //Contact Page js
-
 function processForm(event) {
-  if (validate() == false) event.preventDefault();
+    if (validate() == false) event.preventDefault();
 }
 function validate() {
-  let firstname_val = document.querySelector('#firstname').value;
-  if (firstname_val == "" || firstname_val == null) {
-      alert("Please enter your first name");
-      return false;
-  }
-  let lastname_val = document.querySelector('#lastname').value;
-  if (lastname_val == "" || lastname_val == null) {
-      alert("Please enter your last name");
-      return false;
-  }
-  let telephone_val = document.querySelector('#telephone').value;
-  if (telephone_val == "" || telephone_val == null) {
-      alert("Please enter your telephone");
-      return false;
-  }
-  let email_val = document.querySelector('#email').value;
-  if (email_val == "" || email_val == null) {
-      alert("Please enter your email");
-      return false;
-  }
-  let noOfGuest_val = document.querySelector('#noOfGuests').value;
-  if (noOfGuest_val == "" || noOfGuest_val == null) {
-      alert("Please enter your number Of Guests");
-      return false;
-  }
+    let name_val = document.querySelector('#name').value;
+    if (name_val == "" || name_val == null) {
+        alert("Please enter your first name");
+        return false;
+    }
+    let lastname_val = document.querySelector('#lastname').value;
+    if (lastname_val == "" || lastname_val == null) {
+        alert("Please enter your last name");
+        return false;
+    }
+    let address = document.querySelector('#address').value;
+    if (address == "" || address == null) {
+        alert("Please enter your address");
+        return false;
+    }
+    
+    let mobile_val = document.querySelector('#mobile').value;
+    if (mobile_val == "" || mobile_val == null) {
+        alert("Please enter your mobile number");
+        return false;
+    }
+    if (validateMobile(mobile_val) == false) {
+        alert("Mobile number must begin with 087, 086, or 085 and be 10 characters long.");
+        return false;
+    }
+    
+    let email_val = document.querySelector('#email1').value;
+    if (email_val == "" || email_val == null) {
+        alert("Please enter your email");
+        return false;
+    }
+    let confirm_email_val2 = document.querySelector('#email2').value;
+    if (confirm_email_val2 == "" || confirm_email_val2 == null) {
+        alert("Please confirm your email");
+        return false;
+    }
 
-  // validate that the email is an email address
-  if (validateEmail(email_val) == false) {
-      alert("Invalid email format.");
-      return false;
-  }
-  if (isNumeric(noOfGuest_val) == false) {
-      alert("This is not a number.");
-      return false;
-  }
-  if (isNumeric(telephone_val) == false) {
-      alert("This is not a tefephone number.");
-      return false;
-  }
+    // Validate that the email is an email address
+    if (validateEmail(email_val) == false) {
+        alert("Invalid email format.");
+        return false;
+    }
+
+    // Validate that email and confirm email match
+    if (email_val.toLowerCase() !== confirm_email_val2.toLowerCase()) {
+        alert("Email and confirm email do not match.");
+        return false;
+    }
+    
+    let membership = document.querySelector('input[name="membership"]:checked');
+    if (!membership) {
+        alert("Please select member or not a member.");
+        return false;
+    }
+    let query = document.querySelector('#query').value;
+    if (query == "" || query == null) {
+        alert("Please enter your query");
+        return false;
+    }
 }
 
 function validateEmail(elementValue) {
-  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-  return emailPattern.test(elementValue);
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(elementValue);
+}
+
+function validateMobile(mobileValue) {
+    const mobilePattern = /^(087|086|085)[0-9]{7}$/;
+    return mobilePattern.test(mobileValue);
 }
 
 function isNumeric(numericValue) {
-  const numberPattern = /^[0-9]+$/;
-  return numberPattern.test(numericValue);
+    const numberPattern = /^[0-9]+$/;
+    return numberPattern.test(numericValue);
 }

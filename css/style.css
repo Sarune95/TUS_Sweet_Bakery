@@ -62,6 +62,61 @@ body {
 }
 
 
+/*Pages headings*/
+.PageHeading {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+
+
+.homePage {
+  padding: 10px;
+  margin: 20px;
+  height: auto;
+  overflow: auto;
+  justify-content: center;
+}
+
+.homePage-content p {
+  text-align: center;
+  font-size: 1.5em; 
+  color: #60435F;
+  padding-bottom: 1em;
+}
+.homePage-content a {
+  text-decoration: none;
+}
+
+/*Gallery  page*/
+.hidePics {
+  display: none;
+}
+#mainImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.galleryPic img {
+  border-radius: 15px;
+}
+.next_prev {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.next_prev a {
+  color: black;
+
+ 
+}
 
 
 
@@ -71,6 +126,13 @@ body {
 
 
 
+
+
+
+
+
+  
+/*Recipy  page*/
 #slide {
   text-align: center;
   display: block;
@@ -80,90 +142,6 @@ body {
   height: 40em;
   border-radius: 15px;
 }
-
-
-
-/* Style the body *
-body {
-  height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat",sans-serif;
-    line-height: 1.5em;
-    background-color: #F7EAE4;
-    overflow-x: hidden;
-  }
-  
-  /* Header/Logo Title 
-  .logo {
-    background: #E4B7B4;
-  }
-  .logo a img {
-    max-width: fit-content;
-    height: 90px;
-  }
- */
-
-  
-
-
-    
-/*
-  a.logo {
-    font-size: 25px;
-    font-weight: bold;
-  }
-*/
-
-
-/*Pages headings*
-.PageHeading {
-  text-align: center;
-  padding-top: 1em;
-}
-
-/*Home page*
-.headerImg img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-}
-
-.homePage {
-  padding: 10px;
-  margin: 20px;
-  height: auto;
-  overflow: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.homePage-content {
-  padding: 50px;
-}
-
-.homePage-content img {
-  border-radius: 15px;
-}
-.homePage-content p {
-  text-align: center;
-  font-size: 1.5em;
-  
-  color: #bb6660;
-
-  
-  
-}
-.homePage-content a {
-  text-decoration: none;
-
-
-}
-  
-
 
 /*Recipy Page*
 #slide {
@@ -205,33 +183,6 @@ body {
 
 
 
-/*Gallery*
-/*
-.hidePics {
-  display: none;
-}
-*
-#mainImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: auto;
-    text-align: center;
-    border-radius: 15px;
-}
-
-.galleryPic img {
-  border-radius: 15px;
-}
-.next_prev {
-  text-align: center;
-  font-size: 25px;
-}
-.next_prev a {
-  color: black;
- 
-}
 
 
 /*Contact Page*/
