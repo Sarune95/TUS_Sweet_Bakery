@@ -95,10 +95,8 @@ h3, h4 {
   text-align: center;
   font-size: 1.2em;
   padding: 1em 1em 1em 1em;
-
   color: #60435F;
   font-weight: bold;
-  padding
 }
 h2 {
   text-align: center;
@@ -170,67 +168,60 @@ p {
 
 
 
-/*Footer*
 
-  .footer {
-    background-color: #E4B7B4;
-    text-align: center;
-    padding: 5px;
-    width: 100%;
-    text-decoration: none;
-    margin: 5px 2px;
-  }
-  .footer i {
-    padding: 10px;
-    font-size: 40px;
+/*Contact us page*/
+.contact {
+  padding: 10px;
+  margin: 12px; 
+  height: auto;
+  overflow: auto;
+  justify-content: center;
 }
-.footer span {
-  text-decoration: none;
-}
-
-  
-
-
-
-  /*An example of a compound selector*
-/*.cancelButton > a 
-
-
-
-
-
-/*Contact Page*/
-/*
-#detailsForm {
+.detailsForm p {
   text-align: center;
-  padding: 1em ;
-  border-radius: 5em;
-  
-  
+  font-size: 0.5em; 
+  color: #60435F;
+  padding-bottom: 1em;
 }
-  *
-  #detailsForm {
-    max-width: 400px;
-    margin: auto;
-    padding-top: 3em;
- 
-  }
-label {
+#validation {
+  text-align: center;
+  font-size: 1.4em;
+  color: #60435F;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  font-weight: bold;    
+}
+#detailsForm > button {
   display: block;
+  margin: 0 auto;
+  background-color: #60435F;
+  color: #A8DCD9;
+  border: none;
+  padding: 0.5em;
+  font-size: 1em;
   font-weight: bold;
-  margin-bottom: 0.2em;
-  font-size: 1.3em;
+  border-radius: 0.3em;
+}
+#detailsForm > button:hover {
+  background-color: #A8DCD9;
+  color: #60435F;
 }
 
-.contact_back {
-  background-image: url("/images/contact_Pic.jpg");
-  height: 1120px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ----- FOOTER ----- */
 footer {
