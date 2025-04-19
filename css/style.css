@@ -1,17 +1,17 @@
-/* Reset css against diff browsers*/
+/* Reset css against different browsers*/
 * {
   margin:0;
   padding:0;
 }
 
-/* ----- BODY -----*/
+/*BODY*/
 body {
   max-width: 1920px;
   margin: auto;
   background-color: #E2A3C7;
 }
 
-/* ----- NAVIGATION BAR -----*/
+/*NAVIGATION BAR*/
 .topnav {
   background-color: #60435F;
   overflow: hidden;
@@ -45,33 +45,27 @@ body {
   display: none;
 }
 
-/* ----- MAIN CONTAINER ----- */
+/*MAIN CONTAINER*/
 #container{
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
 }
-
 .image {
   width: 100%;
   height: auto;
 }
-
 .galleryImg {
   width: 24%;
 }
 
-
-/*Pages headings*/
+/*PAGES HEADINGS*/
 .PageHeading {
   color: #60435F;
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
 }
-
-
-
 .homePage {
   padding: 10px;
   margin: 20px;
@@ -79,7 +73,6 @@ body {
   overflow: auto;
   justify-content: center;
 }
-
 .homePage-content p {
   text-align: center;
   font-size: 1.5em; 
@@ -89,8 +82,13 @@ body {
 .homePage-content a {
   text-decoration: none;
 }
+.homePage-content img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  filter: brightness(1.2);
+}
 
-/*About us*/
+/*ABOUT US PAGE*/
 h3, h4 {
   text-align: center;
   font-size: 1.2em;
@@ -112,20 +110,19 @@ p {
   padding-bottom: 1em;
 }
 
-/*Gallery  page*/
+/*GALLERY PAGE*/
 .hidePics {
   display: none;
 }
 #mainImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
-    height: auto;
-    text-align: center;
-    border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  height: auto;
+  text-align: center;
+  border-radius: 15px;
 }
-
 .galleryPic img {
   border-radius: 15px;
 }
@@ -139,8 +136,7 @@ p {
   color: black;
 }
 
-
-/*Event  page*/
+/*EVENT PAGE*/
 .eventPic img {
   border-radius: 15px;
   width: 32%;
@@ -149,13 +145,10 @@ p {
   margin-right: auto;
 }
 .eventImg {
-  
   text-align: center;
 }
 
-
-  
-/*Recipy  page*/
+/*RECIPE PAGE*/
 #slide {
   text-align: center;
   display: block;
@@ -163,13 +156,9 @@ p {
   margin-right: auto;
   max-width: 100%;
   height: 20em;
-
 }
 
-
-
-
-/*Contact us page*/
+/*CONTACT PAGE*/
 .contact {
   padding: 10px;
   margin: 12px; 
@@ -201,29 +190,50 @@ p {
   font-size: 1em;
   font-weight: bold;
   border-radius: 0.3em;
+  padding-bottom: 0.5em;
 }
 #detailsForm > button:hover {
   background-color: #A8DCD9;
   color: #60435F;
 }
 
+/*ORDER PAGE*/
+.order {
+  display: flex;
+  padding: 0.4em;
+  margin: 0.3em; 
+  height: auto;
+  overflow: auto;
+  justify-content: center;
+}
+#orderForm > button {
+  display: block;
+  margin: 0 auto;
+  background-color: #60435F;
+  color: #A8DCD9;
+  border: none;
+  padding: 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 0.3em;
+  padding-bottom: 0.5em;
+}
+#orderForm > button:hover {
+  background-color: #A8DCD9;
+  color: #60435F;
+}
+
+/*ORDER SUBMIT PAGE*/
 
 
+.orderSubmit {
+  color: #60435F;
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ----- FOOTER ----- */
+/*FOOTER*/
 footer {
   background-color: #60435F;
   color: #A8DCD9;
@@ -239,8 +249,7 @@ footer span {
   font-size: 1em;
 }
 
-
-/* ----- NAVIGATION BAR MEDIA QUERIES ----- */
+/*NAVIGATION BAR MEDIA QUERIES*/
 @media screen and (max-width: 850px) {
   .topnav a:not(:first-child) {
     display: none;
