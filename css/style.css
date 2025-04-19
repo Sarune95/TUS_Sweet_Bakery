@@ -64,6 +64,7 @@ body {
 
 /*Pages headings*/
 .PageHeading {
+  color: #60435F;
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -87,6 +88,30 @@ body {
 }
 .homePage-content a {
   text-decoration: none;
+}
+
+/*About us*/
+h3, h4 {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 1em 1em 1em 1em;
+
+  color: #60435F;
+  font-weight: bold;
+  padding
+}
+h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #60435F;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+p {
+  text-align: center;
+  font-size: 1.5em;
+  color: #60435F;
+  padding-bottom: 1em;
 }
 
 /*Gallery  page*/
@@ -114,21 +139,21 @@ body {
 }
 .next_prev a {
   color: black;
-
- 
 }
 
 
-
-
-
-
-
-
-
-
-
-
+/*Event  page*/
+.eventPic img {
+  border-radius: 15px;
+  width: 32%;
+  height: auto; 
+  margin-left: auto;
+  margin-right: auto;
+}
+.eventImg {
+  
+  text-align: center;
+}
 
 
   
@@ -139,19 +164,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  height: 40em;
-  border-radius: 15px;
-}
+  height: 20em;
 
-/*Recipy Page*
-#slide {
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  height: 30em;
-  border-radius: 15px;
 }
 
 
