@@ -78,12 +78,13 @@ body {
   font-size: 1.5em; 
   color: #60435F;
   padding-bottom: 1em;
+  padding-top: 1em;
 }
 .homePage-content a {
   text-decoration: none;
 }
 .homePage-content img:hover {
-  transform: scale(1.1);
+  transform: scale(0.95);
   transition: transform 0.3s ease-in-out;
   filter: brightness(1.2);
 }
@@ -105,7 +106,7 @@ h2 {
 }
 p {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: #60435F;
   padding-bottom: 1em;
 }
@@ -155,7 +156,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  height: 20em;
+  height: 32em;
 }
 
 /*CONTACT PAGE*/
@@ -168,7 +169,7 @@ p {
   flex-direction: column;
   align-items: center;
 }
-/* ---------- Target text field ---------- */
+
 input[type="text"],
 textarea {
     border: 0.1em solid #60435f;
@@ -180,7 +181,6 @@ textarea {
     margin: 0.3em 0;
 }
 
-/* ---------- Target email field ---------- */
 input[type="email"] {
     border: 0.1em solid #60435F;
     width: 95%;
@@ -197,7 +197,6 @@ input[type="radio"] {
     background-color: #A8DCD9;
 }
 
-/* ---------- Target date time field ---------- */
 input[type="datetime-local"] {
   border: 0.1em solid #60435f;
   color: #60435F;
@@ -208,7 +207,7 @@ input[type="datetime-local"] {
   box-sizing: border-box;
   margin: 0.3em 0;
 }
-/* ---------- Target submit button ---------- */
+
 input[type="submit"] {
   border: 0.1em solid #60435f;
   color: #60435F;
@@ -244,7 +243,7 @@ input[type="submit"]:hover {
   color: #60435F;
   text-align: center;
   padding-top: 5.5em;
-  padding-bottom: 23em;
+  padding-bottom: 29em;
 }
 
 /*FOOTER*/
@@ -282,5 +281,74 @@ footer span {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+/*NAVIGATION BAR MEDIA QUERIES*/
+@media screen and (max-width: 850px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .form_Image {
+    display: none;
+  }
+  
+}
+/*NAVIGATION BAR MEDIA QUERIES*/
+@media screen and (min-width: 850px) {
+  #container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .homePage-content {
+    padding: 2em;
+  }
+  .headerImg {
+    grid-column: 1/3;
+  }
+  .PageHeading {
+    grid-column: 1/3;
+  }
+  .grid-left {
+    grid-column: 1/2;
+  }
+  .grid-right {
+    grid-column: 2/3;
+  }
+  .next_prev {
+    grid-column: 1/2;
+  }
+  .slideGrid {
+    grid-column: 1/3;
+  }
+  .recipeContent {
+    grid-column: 1/3;
+  }
+  .contact {
+    grid-column: 1/2;
+  }
+  .form_Image {
+    grid-column: 2/3;
+  }
+  .order {
+    grid-column: 1/2;
+  }
+  .orderSubmit {
+    grid-column: 1/3;
   }
 }
