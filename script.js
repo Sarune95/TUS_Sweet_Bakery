@@ -76,8 +76,6 @@ let time = 2000;  // Time interval between image changes (in milliseconds)
   bakes[3] = "images/recipyImg/pic4.jpg";
   bakes[4] = "images/recipyImg/pic5.jpg";
   bakes[5] = "images/recipyImg/pic6.jpg";
-  bakes[6] = "images/recipyImg/pic7.jpg";
-  bakes[7] = "images/recipyImg/pic8.jpg";
 
 
 // Function to change the image
