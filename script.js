@@ -1,6 +1,6 @@
 
 
-// ---------- Navigation Script ----------
+//-------Navigation Bar Script 
 function myFunction()
 {
     var x = document.getElementById("myTopnav");
@@ -13,43 +13,28 @@ function myFunction()
     x.className = "topnav";
     }
 } 
-// ----------#####----------
 
 
-
-
-/*
-
-//Gallery Page js
-        
+//-------Gallery Page js     
 let currentImg = 1;
 function swap(){
-    //let imgNum = parseInt(this.id.slice(3));
     let imgNum = this.id.slice(3);
     //imgNum = imgNum.charAt(3);
     document.querySelector("#mainImg").src="images/pic"+imgNum+".jpg";
     currentImg = imgNum;
 }
 
-document.querySelector("#pic1").addEventListener("mouseover",swap);
-document.querySelector("#pic2").addEventListener("mouseover",swap);
-document.querySelector("#pic3").addEventListener("mouseover",swap);
-document.querySelector("#pic4").addEventListener("mouseover",swap);
-document.querySelector("#pic5").addEventListener("mouseover",swap);
-document.querySelector("#pic6").addEventListener("mouseover",swap);
-document.querySelector("#pic7").addEventListener("mouseover",swap);
-document.querySelector("#pic8").addEventListener("mouseover",swap);
-document.querySelector("#pic9").addEventListener("mouseover",swap);
-document.querySelector("#pic10").addEventListener("mouseover",swap);
-document.querySelector("#pic11").addEventListener("mouseover",swap);
-
-
-
-
-
+const picIds = ["#pic1", "#pic2", "#pic3", "#pic4", "#pic5", "#pic6", "#pic7", "#pic8", "#pic9", "#pic10", "#pic11"];
+picIds.forEach(id => {
+    const element = document.querySelector(id);
+    if (element) {
+        element.addEventListener("mouseover", swap);
+    }
+});
 
 function next(){
     if(currentImg ==11){
+        currentImg=1; // Wrap around to the first image
         document.querySelector("#mainImg").src="images/pic1.jpg";
     }
     else{
@@ -60,6 +45,7 @@ function next(){
 
 function previous(){
     if(currentImg ==1){
+        currentImg=11; // Wrap around to the last image
         document.querySelector("#mainImg").src="images/pic1.jpg";
     }
     else{
@@ -67,21 +53,19 @@ function previous(){
         document.querySelector("#mainImg").src="images/pic"+currentImg+".jpg";
     }
 }
-document.querySelector("#next").addEventListener("click",next);
-document.querySelector("#prev").addEventListener("click",previous);
+const nextButton = document.querySelector("#next");
+const prevButton = document.querySelector("#prev");
+
+if (nextButton) {
+    nextButton.addEventListener("click", next);
+}
+if (prevButton) {
+    prevButton.addEventListener("click", previous);
+}
 
 
-*/
-
-
-
-
-
-
-
-//Subscribe Page js
-
-// Declare the flowers array and other variables
+//-------Recipes Page js
+// Declare the bakes array and other variables
 let i = 0;
 let bakes = [];
 let time = 2000;  // Time interval between image changes (in milliseconds)
@@ -98,23 +82,18 @@ let time = 2000;  // Time interval between image changes (in milliseconds)
 
 // Function to change the image
 function changeImg() {
-   document.querySelector("#slide").src = bakes[i];
+    document.querySelector("#slide").src = bakes[i];
 
-        if (i<bakes.length-1) {
-            i++;  // Move to the next image
-        } else {
-            i=0;  // Reset to the first image when reaching the end
-        }
-        setTimeout(changeImg, time);  // Call changeImg again after the specified time
+    if (i<bakes.length-1) {
+        i++;  // Move to the next image
+    } else {
+        i=0;  // Reset to the first image when reaching the end
     }
+    setTimeout(changeImg, time);  // Call changeImg again after the specified time
+}
 
 
-
-
-
-
-
-//Contact Page js
+//-------Contact Page js
 function processForm(event) {
     if (validate() == false) event.preventDefault();
 }

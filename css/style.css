@@ -160,72 +160,86 @@ p {
 
 /*CONTACT PAGE*/
 .contact {
-  padding: 10px;
-  margin: 12px; 
+  padding: 0.5em;
+  margin: 0.5em; 
   height: auto;
   overflow: auto;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.detailsForm p {
-  text-align: center;
-  font-size: 0.5em; 
+/* ---------- Target text field ---------- */
+input[type="text"],
+textarea {
+    border: 0.1em solid #60435f;
+    color: #60435f;
+    width: 95%;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    margin: 0.3em 0;
+}
+
+/* ---------- Target email field ---------- */
+input[type="email"] {
+    border: 0.1em solid #60435F;
+    width: 95%;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    margin: 0.3em 0;
+}
+
+input[type="radio"] {
+    width: 1em;
+    height: 1em;
+    accent-color: #60435f;
+    background-color: #A8DCD9;
+}
+
+/* ---------- Target date time field ---------- */
+input[type="datetime-local"] {
+  border: 0.1em solid #60435f;
   color: #60435F;
-  padding-bottom: 1em;
+  font-size: 0.8em;
+  width: 95%;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  margin: 0.3em 0;
 }
-#validation {
-  text-align: center;
-  font-size: 1.4em;
+/* ---------- Target submit button ---------- */
+input[type="submit"] {
+  border: 0.1em solid #60435f;
   color: #60435F;
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
-  font-weight: bold;    
-}
-#detailsForm > button {
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
   display: block;
-  margin: 0 auto;
+  margin: 0.5em auto;
+}
+
+input[type="submit"]:hover {
   background-color: #60435F;
   color: #A8DCD9;
-  border: none;
-  padding: 0.5em;
-  font-size: 1em;
-  font-weight: bold;
-  border-radius: 0.3em;
-  padding-bottom: 0.5em;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-#detailsForm > button:hover {
-  background-color: #A8DCD9;
-  color: #60435F;
-}
+
 
 /*ORDER PAGE*/
 .order {
-  display: flex;
-  padding: 0.4em;
-  margin: 0.3em; 
+  padding: 0.5em;
+  margin: 0.5em; 
   height: auto;
   overflow: auto;
-  justify-content: center;
-}
-#orderForm > button {
-  display: block;
-  margin: 0 auto;
-  background-color: #60435F;
-  color: #A8DCD9;
-  border: none;
-  padding: 0.5em;
-  font-size: 1em;
-  font-weight: bold;
-  border-radius: 0.3em;
-  padding-bottom: 0.5em;
-}
-#orderForm > button:hover {
-  background-color: #A8DCD9;
-  color: #60435F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*ORDER SUBMIT PAGE*/
-
-
 .orderSubmit {
   color: #60435F;
   text-align: center;
